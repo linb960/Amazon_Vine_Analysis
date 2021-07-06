@@ -4,7 +4,9 @@
 Companies like SellBy pay a small fee to Amazon and provide products to Amazon Vine members, who are then required to publish a review.  SellBy wants to determine if there is bias toward favorable reviews by Vine members.
 
 ## Setup and Tools
-There were approximately 50 datasets to choose from for the project. After choosing a dataset of reviews for musical instruments and using PySpark the ETL process was used to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin.  Pyspark was used to then specifically determine if there is any bias toward favorable reviews from the paid Amazon Vine program members.
+There were approximately 50 datasets to choose from for the project. After choosing a dataset of reviews for musical instruments, PySpark and the ETL process were used to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin.<br>
+
+Pyspark was used to then specifically determine if there is any bias toward favorable reviews from the paid Amazon Vine program members.
 
 ## ETL - Extract, Transform and Load
 For Deliverable 1 the following dataset was read into a dataframe: <br>
@@ -61,5 +63,6 @@ Each dataframe was then loaded into a preconfigured Postgres SQL database - here
 vine_df.write.jdbc(url=jdbc_url, table='vine_table', mode=mode, properties=config)
 ```
 
-## Results of 
+## Results of Vine Data Analysis
+
 
