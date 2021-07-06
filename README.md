@@ -12,7 +12,9 @@ Pyspark was used to then specifically determine if there is any bias toward favo
 For Deliverable 1 the following dataset was read into a dataframe: <br>
 https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Musical_Instruments_v1_00.tsv.gz
 
-Four dataframes were then created - here are samples from all four: 
+Four dataframes were then created in this file https://github.com/linb960/Amazon_Vine_Analysis/blob/main/Amazon_Reviews_ETL.ipynb <br>
+
+Here are samples from all four: 
 ```
 Customer Dataframe
 +-----------+--------------+
@@ -64,5 +66,13 @@ vine_df.write.jdbc(url=jdbc_url, table='vine_table', mode=mode, properties=confi
 ```
 
 ## Results of Vine Data Analysis
-
-
+The Vine Table was recreated in the this file https://github.com/linb960/Amazon_Vine_Analysis/blob/main/Vine_Review_Analysis.ipynb <br>
+### Vine Table totals
+The total number of reviews are 904663. <br>
+The reviews with total votes equal or greater than 20 is 16516 <br>
+The total number of helpful reviews calculated from the helpful votes divided by total votes that are greater or equal 50% is 14533 <br>
+The total Vine members paid for reviews is 60 <br>
+The total number of unpaid reviews is 14473 <br>
+The total number of 5 Star Ratings from the helpful reviews is 8244 <br>
+The total 5 Star Ratings from Vine members is 34 <br>
+The total 5 Star Ratings from unpaid reviews is 8210 <br>
