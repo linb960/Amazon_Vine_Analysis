@@ -85,7 +85,7 @@ The total 5 Star Ratings from unpaid reviews is __8210__ <br>
 The precentage of 5 Star Ratings / Total unpaid reviews is __56.73%__
 
 ## Summary
-In conclusion because of the slight difference (.07%) seen in the results we can confidently say there is no bias between the paid and unpaid reviewers.  
+In conclusion because of the slight difference (.07%) seen in the results we can confidently say there is no bias between the paid and unpaid reviewers for the musical instrument dataset.  
 
 ### Additional analysis
 Additional analysis of the data could include calculating and graphing the mean, mode and median over the entire star rating column for both paid and unpaid reviewers.  Since only 5 Star ratings were considered it would be interesting to see if any of these data points would show a bias.  For example if there were lots of 1's or 2's in the star rating column for unpaid reviews our overall results are affected if the star rating column for paid had more 3's and 4's.
