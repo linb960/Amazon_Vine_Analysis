@@ -67,12 +67,26 @@ vine_df.write.jdbc(url=jdbc_url, table='vine_table', mode=mode, properties=confi
 
 ## Results of Vine Data Analysis
 The Vine Table was recreated in the this file https://github.com/linb960/Amazon_Vine_Analysis/blob/main/Vine_Review_Analysis.ipynb <br>
+
 ### Vine Table totals
-The total number of reviews are 904663. <br>
-The reviews with total votes equal or greater than 20 is 16516 <br>
-The total number of helpful reviews calculated from the helpful votes divided by total votes that are greater or equal 50% is 14533 <br>
-The total Vine members paid for reviews is 60 <br>
-The total number of unpaid reviews is 14473 <br>
-The total number of 5 Star Ratings from the helpful reviews is 8244 <br>
-The total 5 Star Ratings from Vine members is 34 <br>
-The total 5 Star Ratings from unpaid reviews is 8210 <br>
+The total number of reviews are __904663__ <br>
+The reviews with total votes equal or greater than 20 is __16516__ <br>
+The total number of helpful reviews calculated from the helpful votes divided by total votes that are greater or equal 50% is __14533__ <br>
+The total number of 5 Star Ratings from the helpful reviews is __8244__ <br>
+
+### Vine Member Results
+The total Vine members paid for reviews is __60__ <br>
+The total 5 Star Ratings from Vine members is __34__ <br>
+The precentage of 5 Star Ratings / Total Vine members is __56.67%__
+
+### Unpaid Review Results
+The total number of unpaid reviews is __14473__ <br>
+The total 5 Star Ratings from unpaid reviews is __8210__ <br>
+The precentage of 5 Star Ratings / Total unpaid reviews is __56.73%__
+
+## Summary
+In conclusion because of the slight difference (.07%) seen in the results we can confidently say there is no bias between the paid and unpaid reviewers.  
+
+### Additional analysis
+Additional analysis of the data could include calculating and graphing the mean, mode and median over the entire star rating column for both paid and unpaid reviewers.  Since only 5 Star ratings were considered it would be interesting to see if any of these data points would show a bias.  For example if there were lots of 1's or 2's in the star rating column for unpaid reviews our overall results are affected if the star rating column for paid had more 3's and 4's.
+
